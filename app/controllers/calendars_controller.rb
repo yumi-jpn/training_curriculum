@@ -9,7 +9,6 @@ class CalendarsController < ApplicationController
   # 予定の保存
   def create
     Plan.create(plan_params)
-    binding.pry
     redirect_to action: :index
   end
 
